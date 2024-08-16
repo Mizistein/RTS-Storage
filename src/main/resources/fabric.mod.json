@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "rtsstorage",
+	"version": "${version}",
+	"name": "RTS Storage",
+	"description": "Real Time Super Storage! \nImport and export from anywhere in the world!",
+	"authors": [
+		"Mizistein"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/rtsstorage/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"mizistein.rtsstorage.RTSStorage"
+		],
+		"client": [
+			"mizistein.rtsstorage.RTSStorageClient"
+		],
+		"fabric-datagen": [
+			"mizistein.rtsstorage.RTSStorageDataGenerator"
+		]
+	},
+	"mixins": [
+		"rtsstorage.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
