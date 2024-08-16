@@ -13,5 +13,6 @@ public class RTSStorage implements ModInitializer {
 	public void onInitialize() {
 
 		LOGGER.info("Hello Fabric world!");
+		LOGGER.info("Mod Started");
 	}
 }
